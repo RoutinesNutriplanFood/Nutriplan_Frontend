@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card {
+    width: 300px;
+  }
+  .custom-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Espacio interno entre el borde y el contenido */
+  }
+  .col-lg-12 {
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+  }
+  button {
+    margin-right: 10px;
+  }
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
