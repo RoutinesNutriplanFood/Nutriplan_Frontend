@@ -1,0 +1,14 @@
+<mat-toolbar class="nabvar">
+  <mat-toolbar-row>
+    <span class="imagen">
+      <img src="assets/img/10962077.png"  class="nutricion-logo">
+    </span>
+    <span class="example-spacer"></span>
+    <button *ngIf="showMenu" mat-raised-button [routerLink]="'/home'">Inicio</button>
+    <button *ngIf="showMenu" mat-raised-button [routerLink]="'/experto'">Expertos</button>
+    <button *ngIf="showMenu" mat-raised-button [routerLink]="'/registro'">Alimentos</button>
+    <button *ngIf="showMenu" mat-raised-button [routerLink]="'/listar-receta'">Recetas</button>
+    <button *ngIf="showMenu" mat-raised-button [routerLink]="'/lista-plan'">Plan</button>
+    <button *ngIf="showMenu" mat-raised-button [routerLink]="'/cuenta'">Cuenta</button>
+  </mat-toolbar-row>
+</mat-toolbar>
