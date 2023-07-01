@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-lg-6">
+        <h2>Alimentos</h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-4">
+        <form [formGroup]="myForm">
+            <div class="col-lg-12">
+                <mat-form-field appearance="fill">
+                    <mat-label>Nombre</mat-label>
+                    <input matInput formControlName="name" required>
+                </mat-form-field>
+                <div *ngIf="myForm.get('name')?.hasError('required') &&
+                    myForm.get('name')?.touched">
+                    <span>Este campo es obligatorio</span>
+                </div>
+                <div *ngIf="myForm.get('name')?.hasError('maxlength')">
+                    <span>Este campo debe tener como máximo 10 letras</span>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <mat-form-field appearance="fill">
+                    <mat-label>Cantidad</mat-label>
+                    <input matInput formControlName="cantidad" required>
+                </mat-form-field>
+                <div *ngIf="myForm.get('cantidad')?.hasError('required') &&
+                    myForm.get('cantidad')?.touched">
+                    <span>Este campo es obligatorio</span>
+                </div>
+            </div>
+            
+
+            <div class="col-lg-12" id="contenedorButton">
+                <button mat-raised-button color="warn" routerLink="/registro">Cancelar</button>
+                <button style="margin-left: 10px" mat-raised-button color="primary" [disabled]="myForm.invalid" (click)=saveRegistro() >Agregar Alimento</button> <!--routerLink="/employee"-->
+            </div>
+
+        </form>
+    </div>
+</div>
