@@ -1,0 +1,45 @@
+.row {
+    margin-left: 30px;
+  }
+  
+  .containerGeneral{
+    position: relative;
+  }
+  
+  .containerForm{
+    position: absolute;
+    left: 50%;
+    transform: translate(-70%, 5%);
+  }
+  
+  #contenedorAñadir {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  #contenedorAñadir > div {
+    width: 48%;
+  }
+  
+  .example-margin {
+    height: 40px;
+    margin-left: 10px;
+  }
+  .example-form-field {
+    margin-right: 20px;
+  }
+  .description {
+    height: 50px;
+    width: 510px;
+  }
+  .example-full-width {
+    width: 510px;
+  }
+  h4 {
+    height: 30px;
+  }
+  .example-form-field {
+    height: 90px;
+  }
+  
