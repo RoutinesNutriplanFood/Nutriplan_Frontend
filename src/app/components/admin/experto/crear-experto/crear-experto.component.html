@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title text-center">Editar Experto</h2>
+            <form [formGroup]="myForm" class="form-card">
+              <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" formControlName="name" required>
+              </div>
+              <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" formControlName="edad" required>
+              </div>
+              <div class="form-group">
+                <label for="especialidad">Especialidad:</label>
+                <input type="text" id="especialidad" name="especialidad" formControlName="especialidad" required>
+              </div>
+              <div class="form-group">
+                <label for="presentacion">Presentación:</label>
+                <textarea id="presentacion" name="presentacion" formControlName="presentacion" required></textarea>
+              </div>
+              <div class="form-group">
+                <label for="phone">Teléfono:</label>
+                <input type="text" id="phone" name="phone" formControlName="phone" required>
+              </div>
+              <div class="form-group text-center">
+                <button mat-raised-button color="warn" routerLink="/experto">Cancelar</button>
+                <button mat-raised-button color="primary" [disabled]="myForm.invalid" (click)="saveEmployee()">Agregar Experto</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

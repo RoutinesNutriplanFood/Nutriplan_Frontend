@@ -3,5 +3,7 @@ export interface Create {
     name: string;
     email: string;
     password: string;
+    peso: string;
+    altura: string;
   }
   

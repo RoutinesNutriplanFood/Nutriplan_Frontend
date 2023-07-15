@@ -1,0 +1,44 @@
+.example-card {
+    max-width: 400px;
+    top: 50px;
+    left: 52px;
+    margin-bottom: 40px;
+    height: 100%;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }  
+  .column-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .column {
+    flex: 1;
+    max-width: 400px;
+  }
+  .card-image {
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+  }
+  .column-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .column {
+    width: calc(50% - 10px); /* Para dos columnas, cada una ocupa el 50% del ancho con un espacio de 20px entre ellas */
+  }
+  
+  @media (max-width: 767px) {
+    .column {
+      width: 100%; /* En dispositivos móviles, las columnas ocupan el 100% del ancho */
+    }
+  }
+  

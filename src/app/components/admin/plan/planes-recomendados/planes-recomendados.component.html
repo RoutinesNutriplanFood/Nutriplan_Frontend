@@ -1,0 +1,23 @@
+<h1>Recomendaciones de Planes</h1>
+<div class="col-lg-6" style="text-align: right">
+    <button mat-raised-button color="primary" routerLink="/crear-plan">Nuevo</button>
+  </div>
+<div class="column-container">
+  <div class="column" *ngFor="let plan of planes">
+    <mat-card class="example-card">
+      <!-- Primer cuadro -->
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{plan.name}}</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+      </mat-card-header>
+      <img class="card-image" mat-card-image src="assets/img/almuerzo-sano.jpg"  alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <h2>Descripcion</h2>
+        <p>{{plan.descripcion}}</p>
+        <h2>Duracion</h2>
+        <p>{{plan.duracion}} dias</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

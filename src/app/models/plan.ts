@@ -3,6 +3,6 @@ export interface Plan {
   name: string;
   descripcion: string;
   duracion: string;
-  objetivos: string;
+  objeticos: string;
   restricciones: string;
 }

@@ -1,0 +1,26 @@
+<h1>Mis Recetas</h1>
+<div class="col-lg-6" style="text-align: right">
+    <button mat-raised-button color="primary" routerLink="/crear-receta">Nuevo</button>
+  </div>
+<div class="column-container">
+  <div class="column" *ngFor="let receta of recetas">
+    <mat-card class="example-card">
+      <!-- Primer cuadro -->
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{receta.name}}</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+      </mat-card-header>
+      <img class="card-image" mat-card-image src="assets/img/almuerzo-sano.jpg"  alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <h2>Ingredientes</h2>
+        <p>{{receta.ingredientes}}</p>
+        <h2>Propiedades</h2>
+        <p>{{receta.propiedades}}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>Guardar</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

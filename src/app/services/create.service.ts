@@ -25,6 +25,6 @@ export class CreateService {
 
 
   deleteCreate(id:any){
-    return this.http.delete<Create>(`${this.basePath}/${id}`)
+    return this.http.delete(this.basePath  + `/creates/${id}`)
   }
 }
