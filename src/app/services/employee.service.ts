@@ -14,13 +14,14 @@ export class EmployeeService {
   getEmployees() {
     return this.http.get<Employee[]>(this.basePath + "/expertos");
   }
+  
 
   addEmployee(employee: Employee){
     return this.http.post<Employee>(this.basePath + "/expertos", employee);
   }
 
   updateEmployee(id:any,employee: Employee){
-    return this.http.put<Employee>(`${this.basePath}/${id}`, employee);
+    return this.http.put<Employee>(`${this.basePath}/edit-expertos/${id}`, employee);
   }
 
 

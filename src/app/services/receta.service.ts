@@ -20,7 +20,7 @@ export class RecetaService {
   }
 
   updateReceta(id:any,receta: Receta){
-    return this.http.put<Receta>(`${this.basePath}/${id}`, receta);
+    return this.http.put<Receta>(`${this.basePath}/edit-recetas/${id}`, receta);
   }
 
 

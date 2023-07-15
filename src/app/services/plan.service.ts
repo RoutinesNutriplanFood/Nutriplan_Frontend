@@ -20,7 +20,7 @@ export class PlanService {
   }
 
   updatePlan(id:any,plan: Plan){
-    return this.http.put<Plan>(`${this.basePath}/${id}`, plan);
+    return this.http.put<Plan>(`${this.basePath}/edit-planes/${id}`, plan);
   }
 
 
