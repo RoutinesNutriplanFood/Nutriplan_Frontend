@@ -51,3 +51,4 @@ export class AddRegistroComponent implements OnInit {
         })
   }
 }
+

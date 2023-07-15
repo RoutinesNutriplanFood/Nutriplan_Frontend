@@ -1,0 +1,22 @@
+<h1>Recomendaciones de Expertos</h1>
+<div class="column-container">
+  <div class="column" *ngFor="let experto of expertos">
+    <mat-card class="example-card">
+      <!-- Primer cuadro -->
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{experto.name}}</mat-card-title>
+        <mat-card-subtitle>Experto</mat-card-subtitle>
+      </mat-card-header>
+      <img class="card-image" mat-card-image src="assets/img/almuerzo-sano.jpg"  alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <h2>Especialidad</h2>
+        <p>{{experto.especialidad}}</p>
+        <h2>Presentacion</h2>
+        <p>{{experto.presentacion}} dias</p>
+        <h2>Telefono</h2>
+        <p>{{experto.phone}}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
